@@ -9,35 +9,40 @@
 </head>
 <body>
     <h1 id="title">My Survey Website- Personality Test</h1>
-    <p id="description">
+    <p>
         The word personality originates from the Latin word persona, referring to masks worn by theater performers to hide their identity or portray different roles.
         
         Your persona, or personality, is unique to you. It&#x27s a combination of the behaviors, emotions, thought patterns, and motivations that define us.</p>
     <h2>Fill in the form below to find your personality type we&#x27ll score the quiz and let you know how others see you.</h2>
-   <form id="survey-form" action="#">
+    
+   <form id="survey-form" action="#"><p class="space" id="description">Enter your personal information.</p>
        <fieldset class="letter">
            <label id="name-label">Enter your first name:  <input type="text" name="name" id="name" placeholder="e.g. Sam Mane" required></label>
            <label id="email-label">Enter your email:  <input type="email" id="email" name="email" placeholder="e.g. luck@gmail.coom" required></label>
            <label id="number-label">Enter your age:  <input type="number" id="number" name="number" placeholder="min18 years old"  min="1"  max="80"></label>
-        
-       <select  id="dropdown"><p>I feel most energetic and focused:</p>
+           <p id="description">I feel most energetic and focused:</p>
+       <select  id="dropdown">
        </fieldset>
         <option name="time">(Select one)</option>
-            <option value="morning" name="time">Morning</option>
-            <option value="afternoon" name="time">Afternoon</option>
-            <option value="evening" name="time">Evening</option>
+            <option value="morning" name="time">In The Morning</option>
+            <option value="afternoon" name="time">In The Afternoon</option>
+            <option value="evening" name="time">In The Evening</option>
         </select>
-        <p>Which one describes you best?</p>
+        <p id="description">Which one describes you best?</p>
         <label id="personality-type-label"> <input type="radio" name="personality-type" class="Judging" value="Judging"/> I am a logical and realistic person.</label>
           <label id="personality-type-label"
           ><input type="radio" name="personality-type" class="Perspective" value=""Perspective" /> I am a spontaneous and carefree person.</label>
-          <p>Click the ones that apply to you.</p>
+          <p id="description">Click the ones that apply to you.</p>
           <p>When you find something really funny, you usually give:</p>
           <label > <input type="checkbox" value="1"> A  big laugh</label>
           <label ><input type="checkbox" value="2"> A small laugh.</label>
         <label ><input type="checkbox" value="3"> A  samall chucke.</label>
         <label ><input type="checkbox" value="4"> A smile.</label>
-        <p>If you have any feedback you want to give about the test , please write down below.</p>
+        <p>When giving a gift you:</p>
+        <label > <input type="checkbox" value="1"> Find someting really nice. </label>
+        <label ><input type="checkbox" value="2"> You purchase a gag gift.</label>
+      <label ><input type="checkbox" value="3"> You make the gift yourself.</label>
+        <p id="description">If you have any feedback you want to give about the test , please write down below.</p>
         <textarea name="feedback" id="feedback" cols="30" rows="5"></textarea>
         <input type="submit" value="Submit">
 
